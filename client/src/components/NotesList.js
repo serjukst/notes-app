@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function NotesList({ notes }) {
   if (notes.length === 0) {
@@ -32,12 +33,12 @@ export default function NotesList({ notes }) {
                   </td>
                   <td>{note.text}</td>
                   <td>
-                    <a
-                      href={`/notes/${note._id}`}
+                    <NavLink
+                      to={`/notes/${note._id}`}
                       className="waves-effect waves-light btn"
                     >
                       <i className="material-icons">edit</i>
-                    </a>
+                    </NavLink>
                   </td>
                 </tr>
               );
