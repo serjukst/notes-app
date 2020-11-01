@@ -33,7 +33,7 @@ export default function NotesList({ notes }) {
                   <td>{note.text}</td>
                   <td>
                     <a
-                      href={`/detail/${note._id}`}
+                      href={`/notes/${note._id}`}
                       className="waves-effect waves-light btn"
                     >
                       <i className="material-icons">edit</i>

@@ -13,7 +13,7 @@ export const useRouters = isAuthenticated => {
         <Route path="/notes" exact>
           <NotesPage />
         </Route>
-        <Route path="/detail/:id">
+        <Route path="/notes/:id">
           <DetailPage />
         </Route>
         <Route path="/user">
