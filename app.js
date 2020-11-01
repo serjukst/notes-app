@@ -1,6 +1,7 @@
 const express = require('express');
 const config = require('config');
 const mongoose = require('mongoose');
+const path = require('path')
 
 const app = express();
 
@@ -13,7 +14,7 @@ app.use('/api/notes', require('./routes/notes.routes'));
 app.use('/api/users', require('./routes/user.routes'));
 
 app.use(function(req, res) {
-	res.sendFile(path.join(__dirname, '../client/build/index.html'));
+	res.sendFile(path.join(__dirname, './client/build/index.html'));
 });
 
 const PORT = process.env.PORT || config.get('port') || 5000;

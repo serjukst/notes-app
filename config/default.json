@@ -1,5 +1,5 @@
 {
-    "port": 5000,
+    "port": 8080,
     "jwtSecret": "Notes_API_42",
     "hashSecret": 42,
     "mongoUri": "mongodb+srv://serjukst:EUBdTmfT0mIhN2vz@cluster0.yxave.mongodb.net/crud_api?retryWrites=true&w=majority",
